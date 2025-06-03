@@ -27,6 +27,11 @@ function sandwich(){
       middleChar = strfield.value[mid]
       alert(`the middle character is ${middleChar}`);
     }
+}else if(strfield.value.length > 5){
+  let first2 = strfield.value.slice(0,2);
+  let last2 = strfield.value.slice(-2);
+  let sandwichstr = first2 + last2;
+  alert(`the sandwich string is: ${sandwichstr}`);
 }
 }
 
